@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { setLogin } from "../redux/userSlice";
+import { userLogin } from "../redux/Action";
 
 function NotLogin() {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ function NotLogin() {
     const nameValue = nameRef.current.value;
     const ageValue = ageRef.current.value;
     const emailValue = emailRef.current.value;
-    dispatch(setLogin({ name: nameValue, age: ageValue, email: emailValue }));
+    dispatch(userLogin({ name: nameValue, age: ageValue, email: emailValue }));
   };
   return (
     <div>
