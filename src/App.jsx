@@ -1,14 +1,7 @@
-import { useState } from "react";
 import { Provider } from "react-redux";
-import userSlice from "./redux/userSlice";
 import Profile from "./components/Profile";
-import { configureStore } from "@reduxJs/toolkit";
+import store from "./redux/Store";
 
-const store = configureStore({
-  reducer: {
-    user: userSlice,
-  },
-});
 function App() {
   return (
     <>
