@@ -6,3 +6,8 @@ export function userLogin(content) {
     },
   };
 }
+export function userLogout() {
+  return {
+    type: "User/UserLogout",
+  };
+}

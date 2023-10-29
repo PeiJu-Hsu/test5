@@ -19,6 +19,11 @@ export default function userReducer(state = initialState, action) {
         },
       };
     }
+    case "User/UserLogout": {
+      return {
+        profile: initialState,
+      };
+    }
   }
   return state;
 }
